@@ -14,8 +14,16 @@ import java.util.regex.Pattern;
  * Created by Rana on 13/11/2021.
  */
 public class PackagePopulator {
+    // common message for invalid content
     private String contentInvalidMsg = "File content is invalid!";
 
+    /**
+     * Generate Package object from string input, also validate package.
+     * if package is invalid, then this method throw exception
+     * @param line
+     * @return
+     * @throws APIException
+     */
     public PackageOfThing populatePackageOfThing(String line) throws APIException {
         String[] splitStr = line.split(":");
 
@@ -38,6 +46,13 @@ public class PackagePopulator {
         return packageOfThing;
     }
 
+    /**
+     * Generate list of things, using regex to extract data by ()
+     * Only get all data which is enclosed by ()
+     * @param thingsStr
+     * @return
+     * @throws APIException
+     */
     private List<Thing> populateThings(String thingsStr) throws APIException {
         Matcher matcher = Pattern.compile("\\((.*?)\\)").matcher(thingsStr);
 
@@ -49,6 +64,13 @@ public class PackagePopulator {
         return things;
     }
 
+    /**
+     * Generate Thing object
+     *
+     * @param thingStr
+     * @return
+     * @throws APIException
+     */
     private Thing populateThing(String thingStr) throws APIException {
         String[] splitStr = thingStr.split(",");
         Thing thing = new Thing();
@@ -63,6 +85,14 @@ public class PackagePopulator {
         return thing;
     }
 
+    /**
+     * Handle two decimal point number, assume that maximum decimal point is two.
+     * It still valid for number 12, 12.0, 12.1, 12.12, but no for 12.252
+     * Also make it to int, as thingChooser algorithm can't handle double value.
+     * @param weightStr
+     * @return
+     * @throws APIException
+     */
     private int getWeightAsInt(String weightStr) throws APIException {
         if(weightStr.contains(".") &&
                 weightStr.substring(weightStr.indexOf(".") + 1).length() > Constants.DECIMAL_POINT_MAX_LEN) {

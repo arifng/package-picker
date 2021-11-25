@@ -1,4 +1,4 @@
-package com.mobiquity.data;
+package com.arifng.data;
 
 import lombok.Data;
 

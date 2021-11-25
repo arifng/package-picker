@@ -1,8 +1,8 @@
-package com.mobiquity.packer.util;
+package com.arifng.packer.util;
 
-import com.mobiquity.data.PackageOfThing;
-import com.mobiquity.exception.APIException;
-import com.mobiquity.util.FileToPackageMapper;
+import com.arifng.data.PackageOfThing;
+import com.arifng.exception.APIException;
+import com.arifng.util.FileToPackageMapper;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

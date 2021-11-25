@@ -1,8 +1,8 @@
-package com.mobiquity.packer.util;
+package com.arifng.packer.util;
 
-import com.mobiquity.data.PackageOfThing;
-import com.mobiquity.data.Thing;
-import com.mobiquity.util.ThingsChooser;
+import com.arifng.data.PackageOfThing;
+import com.arifng.data.Thing;
+import com.arifng.util.ThingsChooser;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

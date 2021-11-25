@@ -1,4 +1,4 @@
-package com.mobiquity.exception;
+package com.arifng.exception;
 
 public class APIException extends Exception {
 

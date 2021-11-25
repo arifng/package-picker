@@ -1,9 +1,9 @@
-package com.mobiquity.packer;
+package com.arifng.packer;
 
-import com.mobiquity.data.PackageOfThing;
-import com.mobiquity.exception.APIException;
-import com.mobiquity.util.FileToPackageMapper;
-import com.mobiquity.util.ThingsChooser;
+import com.arifng.data.PackageOfThing;
+import com.arifng.exception.APIException;
+import com.arifng.util.FileToPackageMapper;
+import com.arifng.util.ThingsChooser;
 
 import java.util.ArrayList;
 import java.util.List;

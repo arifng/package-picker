@@ -1,6 +1,6 @@
-package com.mobiquity.packer.data;
+package com.arifng.packer.data;
 
-import com.mobiquity.data.Thing;
+import com.arifng.data.Thing;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

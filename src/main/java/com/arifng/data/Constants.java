@@ -1,4 +1,4 @@
-package com.mobiquity.data;
+package com.arifng.data;
 
 /**
  * Created by Rana on 13/11/2021.

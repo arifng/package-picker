@@ -1,7 +1,7 @@
-package com.mobiquity.util;
+package com.arifng.util;
 
-import com.mobiquity.data.PackageOfThing;
-import com.mobiquity.data.Thing;
+import com.arifng.data.PackageOfThing;
+import com.arifng.data.Thing;
 
 import java.util.ArrayList;
 import java.util.Collections;

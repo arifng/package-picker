@@ -1,7 +1,7 @@
-package com.mobiquity.util;
+package com.arifng.util;
 
-import com.mobiquity.data.PackageOfThing;
-import com.mobiquity.exception.APIException;
+import com.arifng.data.PackageOfThing;
+import com.arifng.exception.APIException;
 
 import java.io.IOException;
 import java.nio.file.Files;

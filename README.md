@@ -1,4 +1,4 @@
-# package-picker
+# Package Picker
 ## Problem 
 You want to send your friend a package with different things. 
 
